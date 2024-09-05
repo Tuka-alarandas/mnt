@@ -1,0 +1,258 @@
+/* تنسيق أساسي */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+}
+
+/* تنسيق شريط التنقل */
+.header .navbar {
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    background: #f2e000;
+}
+
+.header .navbar .logo {
+    margin-left: 20px;
+}
+
+.header .navbar .title {
+    font-size: 3rem;
+    color: rgb(82, 33, 96);
+    margin-left: 20px;
+}
+
+.header .navbar .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar .menu li {
+    margin-right: 70px;
+}
+
+.header .navbar .menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: rgb(82, 33, 96);
+    transition: color 0.3s ease;
+}
+
+.header .navbar .menu li a:hover {
+    color: rgb(248, 248, 246);
+    font-size: 1.5rem;
+}
+
+.logo {
+    clip-path: circle(50%);
+}
+
+body {
+    padding-top: 106px;
+}
+
+h1 {
+    text-align: center;
+    color: #522160;
+    font-size: 48px;
+    font-weight: bold;
+    background: #f2e000;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.carousel-button {
+    background-color: rgb(82 33 96);
+    color: rgb(242 224 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-button:hover {
+    background-color: rgb(242 224 0);
+    color: rgb(82 33 96);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+#about {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.about-container h2 {
+    color: #522160;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-container p.about-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-container h3 {
+    color: #522160;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.goals-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.goals-list li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.goals-list li:before {
+    content: "✔";
+    color: #f2e000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#about {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#about.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* استعلامات الوسائط لتصميم متجاوب */
+@media (max-width: 768px) {
+    .header .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header .navbar .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header .navbar .menu li a {
+        font-size: 1rem;
+    }
+
+    .carousel-button {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .carousel-images img {
+        height: 300px;
+    }
+
+    #about .about-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .header .navbar .title {
+        font-size: 2rem;
+    }
+
+    .header .navbar .menu li a {
+        font-size: 0.9rem;
+    }
+
+    .carousel-button {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .carousel-images img {
+        height: 250px;
+    }
+
+    .about-container h2 {
+        font-size: 28px;
+    }
+
+    .about-container h3 {
+        font-size: 24px;
+    }
+
+    .about-container p.about-description {
+        font-size: 16px;
+    }
+}

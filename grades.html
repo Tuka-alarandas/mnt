@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>علامات الطلاب - Al-Forqan</title>
+  <link rel="stylesheet" href="grades.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="header">
+    <nav class="navbar" id="navbar">
+      <img class="logo" src="img/logo.jpg" height="75px" width="75px" />
+      <h1 class="title">معهد الفرقان التعليمي</h1>
+      <ul class="menu">
+        <li><a href="program.html">البرامج الدراسية</a></li>
+        <li><a href="statistics.html">الإحصائيات</a></li>
+        <li><a href="grades.html">علامات الطلاب</a></li>
+        <li><a href="teachers.html">المدرسون</a></li>
+        <li><a href="index.html">الرئيسية</a></li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <h1>علامات الطلاب</h1>
+  
+  <div class="filter-container">
+    <label for="class">الصف:</label>
+    <select id="class" class="filter-select">
+      <option value="all">كل الصفوف</option>
+      <option value="الصف الأول">الصف الأول</option>
+      <option value="الصف الثاني">الصف الثاني</option>
+      <option value="الصف الثالث">الصف الثالث</option>
+    </select>
+    
+    <select id="term" class="filter-select">
+      <option value="all">كل الفصول</option>
+      <option value="الفصل الأول">الفصل الأول</option>
+      <option value="الفصل الثاني">الفصل الثاني</option>
+    </select>
+    
+  </div>
+
+  <table class="grades-table">
+    <thead>
+      <tr>
+        <th>الرقم</th>
+        <th>الاسم</th>
+        <th>الصف</th>
+        <th>المادة</th>
+        <th>العلامة</th>
+      </tr>
+    </thead>
+    <tbody id="grades-body">
+     <!-- بيانات الطلاب ستضاف هنا عبر JavaScript -->
+    </tbody>
+  </table>
+
+  <button class="download-button">تحميل العلامات</button>
+
+  <script src="grades.js"></script>
+</body>
+
+</html>

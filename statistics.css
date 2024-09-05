@@ -1,0 +1,101 @@
+#stats-info {
+    padding: 20px;
+    text-align: right;
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه العمودي للعناصر */
+    align-items: center; /* محاذاة العناصر في وسط العنصر */
+    width: 100%; /* عرض العنصر على كامل عرض الشاشة */
+    padding: 20px;
+    background-color: #f2f2f2; /* لون الخلفية */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* للتأكد من أن padding يتم احتسابه ضمن العرض */
+    margin-bottom: 20px; /* إضافة مسافة أسفل العنصر */
+}
+
+.stat-item i {
+    font-size: 50px; /* تكبير حجم الأيقونة */
+    color: #522160;
+    margin-bottom: 10px; /* مسافة بين الأيقونة والنص */
+}
+
+.stat-item p {
+    font-size: 24px; /* تكبير حجم الخط */
+    color: #333;
+    margin: 0; /* إزالة الهوامش الافتراضية لتجنب المسافات الزائدة */
+}
+
+.fee-info {
+    margin-bottom: 20px; /* إضافة مسافة أسفل النص "أقساطنا مدروسة" */
+}
+
+.fee-info p {
+    font-size: 24px; /* تكبير حجم الخط */
+    color: #522160;
+    font-weight: bold; /* جعل النص عريض */
+}
+
+#statistics {
+    margin-top: 40px; /* إضافة مسافة فوق القسم */
+    margin-bottom: 40px; /* إضافة مسافة أسفل القسم */
+    padding: 20px;
+    background-color: #f2f2f2; /* لون الخلفية */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في وسط الحاوية */
+}
+
+.text-content {
+    margin-bottom: 20px; /* مسافة أسفل النص */
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+.bold-text {
+    font-size: 24px; /* تكبير حجم الخط */
+    color: #522160; /* لون النص */
+    font-weight: bold; /* جعل النص عريض */
+    margin-bottom: 10px; /* مسافة أسفل النص */
+}
+
+.regular-text {
+    font-size: 18px; /* حجم الخط العادي */
+    color: #333; /* لون النص */
+    margin: 0; /* إزالة الهوامش الافتراضية لتجنب المسافات الزائدة */
+}
+
+.chart-container {
+    
+    max-width: 800px; /* تحديد الحد الأقصى لعرض الرسم البياني */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* مسافة فوق الرسم البياني */
+}
+
+canvas {
+    max-width: 100%;
+    height: auto; /* السماح للرسم البياني بالتكيف مع الحجم */
+}
+
+.icon {
+    font-size: 30px; /* حجم الأيقونة */
+    color: #522160; /* لون الأيقونة */
+    margin-left: 10px; /* المسافة بين الأيقونة والنص */
+}
+
+/* تنسيق أيقونة جديدة */
+.fa-award {
+    font-size: 50px; /* حجم الأيقونة */
+    color: #522160; /* لون الأيقونة */
+    margin-left: 10px; /* المسافة بين الأيقونة والنص */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إحصائيات المعهد</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="statistics.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <section class="header">
+    <nav class="navbar" id="navbar">
+      <img class="logo" src="img/logo.jpg" height="75px" width="75px" />
+      <h1 class="title">معهد الفرقان التعليمي</h1>
+      <ul class="menu">
+        <li><a href="program.html">البرامج الدراسية</a></li>
+        <li><a href="statistics.html">الإحصائيات</a></li>
+        <li><a href="grades.html">علامات الطلاب</a></li>
+        <li><a href="teachers.html">المدرسون</a></li>
+        <li><a href="index.html">الرئيسية</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <h1>إحصائيات المعهد</h1>
+
+  <section id="stats-info">
+    <div class="stat-item">
+      <i class="fa-solid fa-school-flag icon"></i>
+      <p>سنة افتتاح المعهد: <strong>2020</strong></p>
+    </div>
+    <div class="stat-item">
+      <i class="fa-solid fa-user-graduate icon"></i>
+      <div class="fee-info">
+        <p>أعدادالطلاب</p>
+      </div>
+      <div>
+        <p>عدد الطلاب في السنة الحالية: <strong>420 طالبة و طالب</strong></p>
+        <p>عدد الطلاب في السنوات السابقة: <strong>1250 طالب وطالبة</strong></p>
+        <p>الرسم البياني يوضح النسبة بين أعداد الذكور والإناث</p>
+      </div>
+      <div class="chart-container small-chart">
+        <canvas id="genderDistributionChart"></canvas>
+      </div>
+    </div>
+    
+    
+    <div class="stat-item">
+      <i class="fa-solid fa-hand-holding-dollar icon"></i>
+      <div class="fee-info">
+        <p>أقساطنا مدروسة</p>
+      </div>
+      <p>القسط الشهري للمرحلة الابتدائية: <strong>10 $</strong></p>
+      <p>القسط الشهري للمرحلة الإعدادية: <strong>15 $</strong></p>
+      <p>القسط الشهري للمرحلة الثانوية: <strong>20 $</strong></p>
+    </div>
+    <section id="statistics">
+      <div class="stats-content">
+        <div class="text-content">
+          <i class="fa-duotone fa-solid fa-award"></i>
+          <p class="bold-text">نسب النجاح</p>
+          <p class="regular-text">ازدياد نسب النجاح ثمرة جهودنا وجهود طلابنا</p>
+        </div>
+        <div class="chart-container">
+          <canvas id="successRateChart"></canvas>
+        </div>
+      </div>
+    </section>
+  </section>
+
+ 
+
+  <script src="statistics.js"></script>
+</body>
+</html>

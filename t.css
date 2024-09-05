@@ -1,0 +1,88 @@
+/* تنسيق العنوان h1 */
+h1 {
+    text-align: center; /* محاذاة النص في الوسط */
+    color: #522160; /* اللون الأساسي (البنفسجي) */
+    font-size: 48px; /* حجم الخط */
+    font-weight: bold; /* جعل النص عريض */
+    background:#f2e000; 
+}
+main{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+main section{
+    display: flex;
+    justify-content: space-around;
+ 
+}
+main section article{
+    border: 2px solid rgb(82 33 96);
+    text-align: center;
+    border-radius: 50px;
+}
+main section article h3{
+    color: rgb(82 33 96);
+    padding: 50px;
+    font-size: 40px;
+    font-style:italic;
+}
+main section article img{
+    border: 4px dotted rgb(242 224 0);
+    border-radius: 100px;
+}
+main section article p{
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+main section article:hover{
+box-shadow:-20px 10px 10px rgb(242 224 0);
+}
+.box{
+    margin: 2px;
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; /* يضيف مساحة بين العناصر */
+}
+.box article p {
+    display: none;
+}
+/* تنسيق الزر */
+.box article {
+    position: relative; /* لتمكين وضع العناصر بالنسبة للأصل */
+    text-align: center; /* محاذاة النصوص والأزرار إلى الوسط */
+    background-color:#f9f9f9 ;
+}
+
+.box article img {
+    display: block; /* جعل الصورة عنصر كتلة */
+    margin: 0 auto; /* محاذاة الصورة إلى الوسط */
+}
+
+.box article button {
+    background-color: #522160; /* اللون الخلفي */
+    color: white; /* لون النص */
+    border: 2px solid #f2e000; /* لون الحافة */
+    border-radius: 25px; /* زاوية منحنية للحواف */
+    padding: 10px 20px; /* حشوة داخلية للزر */
+    font-size: 18px; /* حجم الخط */
+    cursor: pointer; /* تغيير المؤشر عند التمرير على الزر */
+    transition: background-color 0.3s ease, color 0.3s ease; /* تأثير التدرج عند التغيير */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    margin-top: 15px; /* مسافة من أعلى الصورة */
+    display: inline-block; /* لتمكين المحاذاة في المنتصف */
+}
+
+/* تأثير الزر عند التمرير فوقه */
+.box article button:hover {
+    background-color: #f2e000; /* تغيير اللون الخلفي عند التمرير */
+    color: #522160; /* تغيير لون النص عند التمرير */
+}
+
